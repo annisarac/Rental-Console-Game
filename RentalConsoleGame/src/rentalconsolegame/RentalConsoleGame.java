@@ -78,11 +78,13 @@ public class RentalConsoleGame extends Member{
             System.out.println("Total Sewa                      : Rp" + g.bonusDiskon(durasiSewa));
             System.out.println("Jumlah Poin                     : " + g.totalPoin(durasiSewa));
             System.out.println("Jumlah Cashback                 : Rp" + g.cashback);
-        }else {
+        }else if (layananMember == "Platinum"){
             System.out.println("Total Sewa                      : Rp" + p.bonusDiskon(durasiSewa));
             System.out.println("Jumlah Poin                     : " + p.totalPoin(durasiSewa));
             System.out.println("Jumlah Cashback                 : Rp" + p.cashback);
             System.out.println("Bonus Pulsa                     : Rp" + p.bonusSewa(durasiSewa));
+        }else {
+            System.out.println("");
         }
     }
     
